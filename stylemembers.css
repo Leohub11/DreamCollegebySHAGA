@@ -1,0 +1,162 @@
+.Members {
+  background-color: #555;
+}
+
+:root {
+  --blue-color: #3ca7ee;
+}
+main {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.search-box {
+  height: 70px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  border-radius: 15px;
+  text-align: center;
+  margin: auto;
+}
+.search-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: #fff;
+  padding: 20px 100px 20px 35px;
+  font-size: 40px;
+}
+
+.search-btn {
+  color: #242628;
+  outline: none;
+  border: none;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.card_overall {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  overflow-x: auto;
+  margin: 20px;
+}
+
+/* Individual card styling */
+.card {
+  flex: 0 1 250px; /* Each card takes up 250px of space and shrinks as needed */
+  height: 300px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #242628;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin-bottom: 20px; /* Space at the bottom for wrapped rows */
+}
+
+/* Custom scrollbar for horizontal scrolling */
+.card_overall::-webkit-scrollbar {
+  height: 8px;
+}
+
+.card_overall::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.card_overall::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.card__img {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  transition: 0.25s;
+  margin: 0 auto;
+  transform: translateY(25px);
+  border-radius: 50%;
+  border: 4px solid var(--blue-color);
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.Student_name {
+  margin-top: 30px;
+}
+h2 {
+  color: white;
+}
+
+p {
+  color: var(--blue-color);
+}
+
+.card__social a:hover {
+  color: var(--blue-color);
+}
+
+.click button {
+  outline: none;
+  border: none;
+  color: white;
+  background-color: transparent;
+  border: 1px solid var(--blue-color);
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.click button:hover {
+  background-color: var(--blue-color);
+}
+.click {
+  display: flex;
+  justify-content: space-around;
+}
+.Info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+.Items,
+.Holds,
+.Charges {
+  font-size: 14px;
+  text-align: center;
+  margin: 15px;
+}
+main::-webkit-scrollbar {
+  height: 8px; /* Horizontal scrollbar height */
+}
+
+main::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+main::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+  }
+}
